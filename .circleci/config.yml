@@ -152,7 +152,7 @@ jobs:
             cat ~/project/.circleci/ansible/inventory.txt
             yum -y install tar gzip
       - run:
-          name: Ensure back-end infrastructure exists
+          name: Ensure back-end infrastructure existss
           command: |
             aws cloudformation deploy \
               --template-file .circleci/files/backend.yml \
